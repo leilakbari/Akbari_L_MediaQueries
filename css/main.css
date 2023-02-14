@@ -1,0 +1,50 @@
+/* reset some values to 0 */
+div,p,body,header,footer,section,article,nav,h1,h2,h3,h4 { 
+    margin: 0; 
+    padding: 0; 
+} 
+  
+img { 
+  border: none; 
+  margin: 0; 
+  padding: 0; 
+}
+  
+/*html selectors*/
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+  
+/*hide elements from browser but show for doc outline*/
+.hidden {
+    display: none;
+  }
+  
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+  
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 75px);
+    grid-column-gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+  
+#mainHeader {
+    grid-column: 1/-1;
+}
+  
+#mainContent {
+    grid-column: 1/9;
+}
+  
+#contentContainer img {
+    grid-column: 10/-1;
+}
