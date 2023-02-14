@@ -14,4 +14,34 @@ p {
     margin-bottom: 20px;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+}
 
+#Column1 {
+    background-color: pink;
+    width: 50%;
+    height: 300px;
+}
+
+#Column2 {
+    background-color: red;
+    width: 50%;
+    height: 300px;
+}
+
+@media screen and (max-width: 400px) {
+    #Column1 {
+        background-color: blue;
+        width: 25%;
+    }
+
+    #Column2 {
+        background-color: purple;
+        width: 25%;
+    }
+}
